@@ -3,6 +3,7 @@ import {Address} from './address';
 import {Review} from './review';
 // endregion
 export class Restaurant {
+  // region Attributes
   name: string;
   website: string;
   phone: string;
@@ -10,4 +11,5 @@ export class Restaurant {
   priceRange: number;
   reviews: Review[];
   location: Address;
+  // endregion
 }
