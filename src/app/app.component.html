@@ -1,37 +1,7 @@
-<div style="text-align:center">
-
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>
-          {{title}}
-        </mat-card-title>
-        <mat-card-subtitle>
-          {{subtitle}}
-        </mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p></p>
-          {{body}}
-      <p></p>
-    </mat-card-content>
-</mat-card>
-
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>
-        {{title}}
-      </mat-card-title>
-      <mat-card-subtitle>
-        {{subtitle}}
-      </mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>Second Paragraph</p>
-      {{body}}
-      <p>Second Paragraph</p>
-    </mat-card-content>
-  </mat-card>
+<div *ngFor="let rest of rests">
+  <app-rest-card [restaurant]="rest"></app-rest-card>
 </div>
+
 
 
 <router-outlet></router-outlet>
