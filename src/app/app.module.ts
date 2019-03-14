@@ -12,7 +12,7 @@ import { RestCardComponent } from './views/rest-card/rest-card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    RestCardComponent
+    RestCardComponent,
   ],
   imports: [
     BrowserModule,
